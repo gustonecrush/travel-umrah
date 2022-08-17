@@ -37,6 +37,8 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
     @yield('styles')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -116,6 +118,8 @@
     {{-- <script src="{{ asset('dist/js/pages/dashboard.js') }}"></script> --}}
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('dist/js/demo.js') }}"></script>
+    
+    <script src="{{ asset('assets/js/global.js') }}"></script>
 
     @yield('scripts')
 </body>

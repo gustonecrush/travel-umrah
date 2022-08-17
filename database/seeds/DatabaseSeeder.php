@@ -11,6 +11,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(PermissionTableSeeder::class);
+        $this->call(CreateSuperAdminUserSeeder::class);
+        $this->call(HotelPermissionSeeder::class);
+        $this->call(HotelSeeder::class);
+        $this->call(MaskapaiPermissionSeeder::class);
+        $this->call(MaskapaiSeeder::class);
+        $this->call(JenisKamarPermissionSeeder::class);
+        $this->call(JenisKamarSeeder::class);
+        $this->call(TemplateItineraryPermissionSeeder::class);
+        $this->call(PaketUmrohPermissionSeeder::class);
+        $this->call(JadwalPenerbanganPermissionSeeder::class);
+        $this->call(JamaahPermissionSeeder::class);
+        $this->call(TransaksiPermissionSeeder::class);
+        $this->call(PembayaranPermissionsSeeder::class);
+        $this->call(SyncAllPermissionsSeeder::class);
     }
 }

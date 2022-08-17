@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kartu Kerja | PT. X</title>
+    <title>Eltura Travel</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -33,7 +33,8 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ route('dashboard.index') }}">PT.X</a>
+            {{-- <a href="{{ route('dashboard.index') }}">PT.X</a> --}}
+            <img src="{{ asset('assets/images/logo.png') }}" alt="Eltura Travel" height="125">
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">

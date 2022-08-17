@@ -91,4 +91,41 @@ Route::group(['middleware' => ['auth']], function () {
     Route::prefix('reports')->group(function () {
         Route::get('/', 'ReportController@byCategory')->name('report.bycategory');
     });
+
+    Route::resource('hotel', 'HotelController')->except([
+        'show'
+    ]);
+
+    Route::resource('maskapai', 'MaskapaiController')->except([
+        'show'
+    ]);
+
+    Route::resource('jenis-kamar', 'JenisKamarController')->except([
+        'show'
+    ]);
+    
+    Route::resource('paket-umroh', 'PaketUmrohController');
+
+    Route::resource('jamaah', 'JamaahController');
+
+    Route::resource('transaksi', 'TransaksiController');
+
+    Route::resource('template-itinerary', 'TemplateItineraryController')->except([
+        'show'
+    ]);
+
+    Route::resource('jadwal-penerbangan', 'JadwalPenerbanganController')->except([
+        'show'
+    ]);
+
+    Route::resource('pembayaran', 'PembayaranController')->except([
+        'show'
+    ]);
+
+    Route::livewire('itinerary-templates/create', 'itinerary.create-itinerary-template')->name('itinerary-templates.create');
+    Route::resource('itinerary-templates', 'ItineraryTemplateController')->except([
+        'create'
+    ]);
+    
+    Route::get('/itinerary/{transaksi}/print', 'TransaksiController@print')->name('itinerary.print');
 });
