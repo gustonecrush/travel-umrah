@@ -1,17 +1,17 @@
 <header class="main-header">
-    {{-- Logo  --}}
+    {{-- Logo --}}
     <a href="{{ route('dashboard.index') }}" class="logo">
-        {{-- mini logo for sidebar mini 50x50 pixels  --}}
+        {{-- mini logo for sidebar mini 50x50 pixels --}}
         <span class="logo-mini">
             <img src="{{ asset('assets/images/logo.png') }}" alt="Eltura Travel" height="50">
         </span>
-        {{-- logo for regular state and mobile devices  --}}
+        {{-- logo for regular state and mobile devices --}}
         <span class="logo-lg">
-            <img src="{{ asset('assets/images/favicon.ico') }}" alt="Eltura Travel">
-            <b>Eltura Travel</b>
+            <img src="{{ asset('assets/images/logo.png') }}" alt="Eltura Travel">
+            <b>Puja Travel</b>
         </span>
     </a>
-    {{-- Header Navbar: style can be found in header.less  --}}
+    {{-- Header Navbar: style can be found in header.less --}}
     <nav class="navbar navbar-static-top">
         {{-- Sidebar toggle button --}}
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -36,7 +36,8 @@
                                     <!-- start message -->
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                                            <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle"
+                                                alt="User Image">
                                         </div>
                                         <h4>
                                             Support Team
@@ -49,7 +50,8 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="{{ asset('dist/img/user3-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                            <img src="{{ asset('dist/img/user3-128x128.jpg') }}" class="img-circle"
+                                                alt="User Image">
                                         </div>
                                         <h4>
                                             AdminLTE Design Team
@@ -61,7 +63,8 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="{{ asset('dist/img/user4-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                            <img src="{{ asset('dist/img/user4-128x128.jpg') }}" class="img-circle"
+                                                alt="User Image">
                                         </div>
                                         <h4>
                                             Developers
@@ -73,7 +76,8 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="{{ asset('dist/img/user3-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                            <img src="{{ asset('dist/img/user3-128x128.jpg') }}" class="img-circle"
+                                                alt="User Image">
                                         </div>
                                         <h4>
                                             Sales Department
@@ -85,7 +89,8 @@
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="{{ asset('dist/img/user4-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                            <img src="{{ asset('dist/img/user4-128x128.jpg') }}" class="img-circle"
+                                                alt="User Image">
                                         </div>
                                         <h4>
                                             Reviewers
@@ -263,7 +268,7 @@
                             </div>
                             <!-- /.row -->
                         </li>
-                         --}}
+                        --}}
 
                         {{-- Menu Footer --}}
                         <li class="user-footer">
@@ -271,20 +276,20 @@
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
                             </div>
                             <div class="pull-right">
-                                <a class="btn btn-default btn-flat" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
+                                <a class="btn btn-default btn-flat" href="{{ route('logout') }}" onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
                                     @csrf
                                 </form>
                             </div>
                         </li>
                     </ul>
                 </li>
-                {{-- Control Sidebar Toggle Button  --}}
+                {{-- Control Sidebar Toggle Button --}}
                 {{-- <li>
                     <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                 </li> --}}

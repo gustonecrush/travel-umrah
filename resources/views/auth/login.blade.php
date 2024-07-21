@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Eltura Travel</title>
+    <title>Umrah Travel</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -35,6 +35,7 @@
         <div class="login-logo">
             {{-- <a href="{{ route('dashboard.index') }}">PT.X</a> --}}
             <img src="{{ asset('assets/images/logo.png') }}" alt="Eltura Travel" height="125">
+            <h1>Panel Admin PT Putri Cahaya Angkasa Jaya</h1>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
@@ -43,7 +44,9 @@
             <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="form-group has-feedback">
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email" autofocus>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                        name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email"
+                        autofocus>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -52,7 +55,8 @@
                     @enderror
                 </div>
                 <div class="form-group has-feedback">
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
+                        name="password" required autocomplete="current-password" placeholder="Password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     @error('password')
                         <span class="invalid-feedback" role="alert">
@@ -72,9 +76,9 @@
                     <div class="col-xs-4">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">{{ __('Login') }}</button>
                         {{-- @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a>
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a>
                         @endif --}}
                     </div>
                     <!-- /.col -->
